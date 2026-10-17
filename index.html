@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görkem | Kişisel Portföy & Prodüksiyon</title>
+    <style>
+        /* Genel Ayarlar ve Stil */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d0d0d;
+            color: #dfdfdf;
+            line-height: 1.6;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(13, 13, 13, 0.95);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            z-index: 1000;
+            border-bottom: 1px solid #1f1f1f;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: #a0a0a0;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff5722;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #0d0d0d 100%);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(255, 87, 34, 0.1);
+            color: #ff5722;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 87, 34, 0.2);
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            color: #ff5722;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: #888;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ff5722;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            transform: translateY(-2px);
+        }
+
+        .section {
+            padding: 100px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .section-desc {
+            color: #888;
+            margin-bottom: 50px;
+        }
+
+        .fusion-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .fusion-card {
+            background-color: #161616;
+            border: 1px solid #222;
+            padding: 40px 30px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: left;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+
+        .fusion-card:hover {
+            border-color: #ff5722;
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            font-size: 1.5rem;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .fusion-card h3 {
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .fusion-card p {
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+
+        .alt-bg {
+            background-color: #111;
+            max-width: 100%;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid #ff5722;
+            padding-bottom: 2px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #080808;
+            color: #555;
+            font-size: 0.85rem;
+            border-top: 1px solid #161616;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Üst Menü -->
+    <header>
+        <div class="logo">GÖRKEM</div>
+        <nav>
+            <a href="#dunya">Kod & Prodüksiyon</a>
+            <a href="#iletisim">İletişim</a>
+        </nav>
+    </header>
+
+    <!-- Ana Karşılama Alanı -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Bilgisayar Programcılığı & Müzik</span>
+            <h1>Merhaba, Ben <span class="highlight">Görkem Kaya</span></h1>
+            <p>Bilgisayar Programcılığı öğrencisi, yazılımcı ve 90 BPM ritimlerle melankolik rap üreten prodüktör.</p>
+            <a href="#dunya" class="btn">Dünyamı Keşfet</a>
+        </div>
+    </section>
+
+    <!-- İçerik Alanı -->
+    <section id="dunya" class="section">
+        <h2>Ortak Dünyam</h2>
+        <p class="section-desc">Yazılım projelerimle mantığı, müzik altyapılarım ve sözlerimle ise duyguyu kodluyorum.
+        </p>
+
+        <div class="fusion-grid">
+            <!-- Yazılım Kısmı -->
+            <div class="fusion-card">
+                <div class="card-icon">&lt;/&gt;</div>
+                <h3>Yazılım & Geliştirme</h3>
+                <p><strong>Kolay Mat</strong> projesi gibi eğitimsel uygulamalar tasarlıyor, Android Studio ve Python
+                    ile kod evreninde yeni şeyler üretiyorum. GitHub üzerinden projelerimi yayınlıyorum.</p>
+            </div>
+
+            <!-- Müzik Kısmı -->
+            <div class="fusion-card">
+                <div class="card-icon">♫</div>
+                <h3>Müzik & Prodüksiyon</h3>
+                <p>FL Studio Mobile üzerinde 90 BPM lo-fi ve boom-bap altyapılar hazırlıyor; "Kaldırım ve Gökdelen" gibi
+                    melankolik rap şarkılarımın söz ve altyapı süreçlerini bizzat şekillendiriyorum.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="iletisim" class="section alt-bg">
+        <h2>İletişim</h2>
+        <p>Projelerim veya müzik çalışmalarım hakkında konuşmak istersen bana ulaşabilirsin:</p>
+        <div class="social-links">
+            <a href="https://github.com/kayagorkem179" target="_blank">GitHub Projelerim</a>
+            <a href="mailto:kayagorkem179@gmail.com">kayagorkem179@gmail.com</a>
+        </div>
+    </section>
+
+    <!-- Alt Bilgi -->
+    <footer>
+        <p>&copy; 2026 - Görkem Kaya</p>
+    </footer>
+
+</body>
+
+</html>
